@@ -57,16 +57,16 @@ echo $ ( ( 100 + 300 ) ) ----> Output: 400
 
 2.2. Relational or Comparison operators: To compare two values. it is used to compare values in conditional statements
 Operators:
-Equal to				: == or eq
+Equal to				: == or -eq
 Not equal to			: !=
-Greater than			: > or gt
-Greater than or equal	: >= or ge
-Less than				: < or lt
-Less than or equal		: <= or le
+Greater than			: > or -gt
+Greater than or equal	: >= or -ge
+Less than				: < or -lt
+Less than or equal		: <= or -le
 
 Syntax:
 
-if [ condition ]; then
+if [ condition ]; then   #spacing is mandatory after [ & before ]. Example [ $num1 -ge $num2 ]
 	#Statements
 elif [ condition ]; then
 	#Statements.
