@@ -20,20 +20,21 @@ Ex: $USER, $HOME, $PATH
 To see all the system variables; env
 
 2. User defined Variables - created by user based on the requirement
+These variables could be created with export command and also without this command.
 
 Temporary variables - are created using 'export' command. These variables cannot be accessed once the terminal closes. the assigned values to the variable will be lost
 
 Permanent variables - even if i lose connection to the terminal, the values assigned to a variable will still be available
 
 How to make a variable as a permanent?
-	- .bashrc
-	- source .bashrc
+	- .bashrc (this file contains all the permanent variables, we should write export command inside this file whenever creating a variable, which we need to access permanently)
+	- source .bashrc (this cmd needs to be excuted after saving .bashrc file, then only variables will actually be permamnently be saved.
 
 How to see the variables available in the .bashrc file
 	- cat -n .bashrc
 
 To remove a variable
-unset <VariableName>
+unset <VariableName>    # this won't remove the variable from .bashrc file. It's that post executing this cmd, you won't be able to access 						# the variable from terminal.
 
 Points to remember;
 1. Cannot start with a digit (Ex: 123Kastro, 611Kiran)
