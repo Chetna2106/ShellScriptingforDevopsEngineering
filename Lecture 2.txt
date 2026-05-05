@@ -98,12 +98,35 @@ Task 1:
 Write a shell file to check whether a file is available or not in a specific path
 
 Output: The <FileName> is available in <Path>
+
+	#!/bin/bash
+	echo "Enter file name: "
+	read file_name
+	echo "Enter path: "
+	read path
+	
+	if [ -f "$path/$file_name" ]; then
+	        echo "$file_name is present at the path $path"
+	else
+	        echo "$file_name is not present at the path $path"
+	fi
+
  
 Task 2:
 Write a shell file to check what is the file type (whether it is a directory or a normal file)
 
 Output:  "The <Name> is a Normal File" (if its a file), otherwise it should print "The <Name> is a directory"
 
+	#!/bin/bash
+	echo "Enter name of file/directory: "
+	read name
+	if [ -f $name ]; then
+		echo "This is a file"
+	elif [ -d $name ]; then
+		echo "This is a directory"
+	else 
+		echo "file or directory of this name doesn't exist"
+	fi
 
 
 
