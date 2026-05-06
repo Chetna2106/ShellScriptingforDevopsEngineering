@@ -76,6 +76,22 @@ $@ treats each argument as a separate entity, keeping them distinct even if ther
 $* treats all arguments as a single string, with spaces b/w them, which can lead to loss of distinction if arguments contains spaces
 
 
+Script to print arguments
+
+	#!/bin/bash
+
+	echo "File name is $0"
+	echo "First argument is $1"
+	echo "Second argument is $2"
+	echo "Third argument is $3"
+	echo "Total number of arguments is $#"
+	echo "All the arguments are \$@: $@"
+	echo "All the arguments are \$*: $*"
+
+Below are the arguments provided during script execution (totak no. of arguments are 6):
+	sh cla.sh Anil Madhu ManikaPanday Vinshu Chetna Anush
+
+
 3. Functions
 Functions are reusable blocks of code that performs a specific task.
 They help in organizing the code, avoiding the repetition, and making script modular
