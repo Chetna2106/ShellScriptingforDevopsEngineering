@@ -2,7 +2,7 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 													LECTURE 04
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1. Conditional Statements
+1. Conditional Statements (CS)
 CS allow you to execute specific blocks of code based on whether the condition is true/false
 CS are used to execute commands based on a condition
 To implement CS we will use "if-elif-else"
@@ -22,6 +22,16 @@ else
 
 if-else SCRIPT
 Shell Script to check whether a file is available or not
+
+#!/bin/bash
+
+echo "Enter the file name"
+read file
+if [ -e $file ]; then
+	echo "The $file exists"
+else 
+	echo "The $file doesn't exist"
+fi
 
 
 2. Command Line Arguments
