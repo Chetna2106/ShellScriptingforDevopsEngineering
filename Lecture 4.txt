@@ -51,7 +51,7 @@ Shell Script to check whether a year entered (of 4 characters) is a leap year or
 	        echo "Year entered doesn't contain 4 characters"
 	fi
 
-2. Command Line Arguments
+2. Command Line Arguments (CLA)
 CLA are inputs passed to script when it is being executed
 CLA allows us to make our scripts dynamic and reusable
 CLA can be accessed using special vairables
