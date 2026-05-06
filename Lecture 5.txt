@@ -29,7 +29,7 @@ CRON is an utility in Linux OS to schedule jobs execution
 	- Take the backup files
 	- System health checks
 
-cron expression/format
+cron expression/format  (it follows 24 hour format)
 * * * * * -----> every minute the job will get executed
 
 First * ----> Minute (0-59)
