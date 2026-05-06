@@ -23,15 +23,15 @@ else
 if-else SCRIPT
 Shell Script to check whether a file is available or not
 
-#!/bin/bash
-
-echo "Enter the file name"
-read file
-if [ -e $file ]; then
-	echo "The $file exists"
-else 
-	echo "The $file doesn't exist"
-fi
+	#!/bin/bash
+	
+	echo "Enter the file name"
+	read file
+	if [ -e $file ]; then
+		echo "The $file exists"
+	else 
+		echo "The $file doesn't exist"
+	fi
 
 
 2. Command Line Arguments
