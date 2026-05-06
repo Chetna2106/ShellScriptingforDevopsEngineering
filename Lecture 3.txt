@@ -35,13 +35,49 @@ do
 	<Statements>
 done
 
+---------------------------
 
 Assignment:
 Task 1: For loop: Create a directory and Write a shell script file to print all the .py, .java and .txt files available in custom directory path
+
+	#!/bin/bash
+	
+	echo "Enter directory name:"
+	read dir
+	
+	if [ -d $dir ]; then
+		for file in "$dir"/*
+			do
+				if [[ $file == *.py || $file == *.txt || $file == *.sh ]]; then
+					echo $file
+				fi
+			done
+	
+	else
+		echo "The directory name entered doesn't exist"
+	fi
+
 Task 2: For loop: Write a shell file to Print Even Numbers from 2 to 20
+
+	#!/bin/bash
+	
+	for ((n=2; n<=20; n+=2 ))
+	do
+		echo $n
+	done
+
 Task 3: While loop: Write a shell file to Monitor CPU Usage in Real-Time
 
+	#!/bin/bash
 
+	while true
+	do
+	    clear
+	    echo "CPU Monitoring..."
+	    top -n1 | head -5
+	    sleep 2
+	done
+------------------------------
 
 
 
