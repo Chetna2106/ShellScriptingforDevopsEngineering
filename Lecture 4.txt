@@ -33,6 +33,23 @@ Shell Script to check whether a file is available or not
 		echo "The $file doesn't exist"
 	fi
 
+Shell Script to check whether a year entered (of 4 characters) is a leap year or not
+
+	#!/bin/bash
+
+	echo "Enter the year:"
+	read year
+	length=${#year}
+	
+	if [ $length == 4 ]; then
+	        if (( ($year%4 == 0 && $year%100 != 0) || $year%400 == 0 )); then   
+	                echo "$year is a leap year"
+	        else
+	                echo "$year is not a leap year"
+	        fi
+	else
+	        echo "Year entered doesn't contain 4 characters"
+	fi
 
 2. Command Line Arguments
 CLA are inputs passed to script when it is being executed
